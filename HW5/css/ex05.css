@@ -1,0 +1,19 @@
+table { border-collapse: collapse; font-family: Futura, Arial, sans-serif; margin: 0 auto; }
+caption { font-size: larger; }
+th, td { padding: .5em; }
+th, thead { background: orange; color: white;  }
+tr { background: #ccc; }
+tr:hover { background: #def; }
+td { /*border-right: 1px solid #777;*/ text-align: right;}
+td input:nth-child(2),td input:nth-child(3){
+    text-align: right;
+}
+table { /*border: 2px solid #777;*/ }
+tfoot tr th button
+{text-align: center;}
+tbody > tr > td:nth-child(2) > input{
+    text-align: center;
+}
+tbody > tr > td:nth-child(3)>input{
+    text-align: right;
+}
