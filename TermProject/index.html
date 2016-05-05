@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Term Project - Secret Code</title>
+    <link href="https://code.jquery.com/ui/1.11.3/themes/ui-darkness/jquery-ui.css" rel="stylesheet">
+    <link href="css/game.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+
+    <script src="js/game.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>Secret Code Game </h1>
+        <ul>
+            <li class="ui-corner-all">How-To-Play</li>
+            <li class="ui-corner-all">About this app</li>
+        </ul>
+    </header>
+    <div class="main">
+
+        <div id="mainContent">
+            <div class="about">
+                <h3>About:</h3>
+                <p>This app is a term from project for BU MSCIS-701 course</p>
+                <p>I use Html5 and JQuery/UI to program all the behavior of this application, such as the hide/show and the events when user clicks the buttons etc.
+                    I also use an api to pick random words for the word section of the game.
+                    As well Im embedding some videos from youtube as a main prize. </p>
+            </div>
+            <div class="how">
+                <h3>How To:</h3>
+                <p>In order to find the code, You have two options: </p>
+                <ol>
+                    <li>Find the 3 color code, by clicking the buttons for the right combination</li>
+                    <li>Find the correct word by drag in the letters and put the in the correct order to find the secret word</li>
+                </ol>
+                <p>Now that you know.</p>
+                <p>Have some fun!!!!</p>
+                <hr>
+            </div>
+            <div id="fail">
+
+            </div>
+
+
+        </div>
+        <div class="fun ui-widget">
+            <h1>Here is your prize great job!!!</h1>
+            <h1> thanks for using my app!</h1>
+            <button id="again">Play Again</button>
+        </div>
+        <div id="prize" class="ui-widget">
+            <div id="msg">
+                <h1>Enter your code to claim your prize</h1>
+                <input type="text" id="inputCode"><br>
+                <button id="reedem" class="ui-corner-all ">Enter</button>
+            </div>
+
+        </div>
+        <div class="chances">
+            <ul class="lifes"><li class="ui-corner-all" >Chances Remaining:</li><li class="ui-corner-all" >1</li><li class="ui-corner-all">2
+            </li><li class="ui-corner-all">3</li><li class="ui-corner-all">4</li></ul>
+        </div>
+        <div id="accordion">
+            <h3>Option 1 - Color Code Game</h3>
+
+            <div id="gameColors">
+                <div class="control">
+                    <p>Instructions: Find the correct 3-color combination that is equivalent to the color</p>
+
+
+                    <div class="blocks-button">
+
+                        <button id="colorOne" value="r" class="red">Red</button>
+                        <button id="colorTwo" value="g" class="green">Green</button>
+                        <button id="colorThree" value="b" class="blue">Blue</button>
+                        <span>=</span>
+                        <span id="color"></span>
+                        <button id="check" value="color">Check Color</button>
+                        <button id="cHint">Hint</button><button id="clearInput" value="color">Clear</button>
+
+                    </div>
+                    <div class="blocks">
+
+                    </div>
+
+
+                </div>
+                <div id="code">
+
+                </div>
+            </div>
+
+            <h3>Option 2 - Find the Secret Word</h3>
+
+            <div id="gameWord">
+                <div>
+                    <p>
+                    You Task: to find the code your looking for you need to organize the letter below. :) when ready
+                    click on the button to start playing the game
+                    </p>
+
+                    <button id="genWord">START</button>
+                    <button id="wordHint">HINT</button>
+                    <button id="genNewWord">NEW WORD</button>
+                    <button id="checkWord" value="word">CHECK WORD</button>
+                </div>
+                <div id="dragTarget">
+                    <div class="wrapper-words">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+                <div id="dragWord"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h5>Alvaro Ching &copy;2015</h5>
+        <div id="tune">
+
+
+        </div>
+    </footer>
+
+</div>
+
+
+</body>
+</html>
+

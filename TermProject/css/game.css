@@ -1,0 +1,403 @@
+html {
+    position: relative;
+    margin: 0 auto;
+}
+
+body {
+    background: url(symphony.png);
+    margin: 0 auto;
+}
+
+.wrapper {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    background: white;
+    height: 100%;
+}
+
+.main {
+    position: relative;
+
+}
+
+#mainContent {
+}
+
+.control {
+    display: inline;
+
+}
+
+.chances ul {
+    width: 800px;
+    padding: 0;
+
+}
+
+.chances ul li {
+    background-color: orange;
+    text-align: center;
+    display: inline;
+    width: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    list-style: none;
+    clear: both;
+    font-size: 25pt;
+    border: 1px solid white;
+}
+
+.blocks-button {
+    display: block;
+
+}
+
+.blocks-button button {
+    width: 150px;
+    heigh: 150px;
+    margin-right: 10px;
+}
+
+.blocks {
+    display: inline-block;
+
+}
+
+.blocks div {
+    width: 150px;
+    heigh: 150px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 20pt;
+    text-align: center;
+    float: left;
+}
+
+#accordion {
+    position: relative;
+}
+
+#code {
+    margin-top: 70px;
+}
+
+#code h1 {
+    font-size: 25pt;
+    text-align: center;
+}
+
+#again {
+    margin-bottom: 20px;
+}
+
+#prize, .fun {
+    display: block;
+    text-align: center;
+    font-size: 25pt;
+    border: 5px dashed gray;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+#prize input {
+    height: 50px;
+    width: 500px;
+    font-size: 25pt;
+    text-align: center;
+}
+
+#prize button, #play, #playHow {
+    margin-top: 25px;
+    height: 50px;
+    width: 200px;
+    font-size: 25pt;
+    text-align: center;
+    cursor: pointer;
+}
+
+#gameWord div {
+    display: block;
+    text-align: center;
+    position: relative;
+    float: left;
+    left: 5%;
+}
+
+.wrapper-words {
+    margin: 0 auto;
+    width: auto;
+}
+
+#dragTarget {
+    /*margin-top: 10px;*/
+    width: 95%;
+    height: 150px;
+    margin: 0 auto;
+
+    padding: 0;
+
+}
+
+#dragTarget ul {
+    display: inline;
+    float: left;
+    width: auto;
+    position: static;
+
+}
+
+#dragTarget ul li {
+    margin-top: 25px;
+    padding-bottom: 10px;
+    display: inline;
+    border: 1px solid white;
+    width: 95px;
+    height: 75px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 45pt;
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+
+#dragWord {
+
+    position: relative;
+    left: 5%;
+    float: left;
+    width: 1000px;
+    cursor: pointer;
+
+}
+
+#dragWord div {
+    display: inline;
+    float: left;
+    position: relative;
+    left: 43%
+
+}
+
+.tiles {
+    color: white;
+    font-size: 35pt;
+    text-transform: capitalize;
+    margin-right: 20px;
+    text-align: center;
+    float: left;
+    position: relative;
+
+}
+
+.tiles:hover {
+    color: orangered;
+}
+
+.secret-code {
+    font-size: 35pt;
+    color: red;
+}
+
+.fun, .about, .how {
+    display: none;
+}
+
+.about, .how {
+    height: 500px;
+    text-align: left;
+    border: 5px dashed gray;
+    font-size: 18pt;
+}
+
+hr {
+    width: 960px;
+    text-align: center;
+    border: 2.5px dashed orange;
+}
+
+#play, #playHow {
+    margin-left: 70px;
+
+}
+
+.about h3, .how h3 {
+    margin-left: 67px;
+    border-bottom: 2.5px dashed orange;
+    width: 215px;
+}
+
+.about p, .how p {
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: justify;
+}
+
+.how ol {
+    padding-left: 100px;
+}
+
+.how ol li {
+    color: orangered;
+}
+
+header {
+    display: block;
+    height: 80px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid orange;
+
+}
+
+header h1 {
+    width: 660px;
+    float: left;
+    padding-left: 15px;
+    height: 58px;
+    background: orange;
+    margin: 0;
+    text-align: center;
+    padding-top: 22px;
+}
+
+header ul {
+    float: right;
+    margin-right: 30px;
+}
+
+header ul li {
+    display: table-column;
+    float: left;
+    padding-top: 9px;
+    font-size: 16pt;
+    padding-right: 60px;
+    border: 1px solid black;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-left: 54px;
+    list-style: none;
+    margin-right: 25px;
+}
+
+.active {
+    background: royalblue;
+    color: whitesmoke;
+    border: 1px solid royalblue;
+}
+
+header ul li:hover {
+    background: dimgrey;
+    color: white;
+}
+
+footer {
+    position: relative;
+    background: black;
+    color: white;
+    height: 55px;
+    float: left;
+    width: 1280px;
+    margin-top: 50px;
+    bottom: 0;
+
+}
+
+footer h5 {
+    padding-top: 23px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    width: 20%;
+    float: left;
+    margin: 0;
+}
+
+footer #tune {
+    float: right;
+    margin: 0;
+    padding-top: 16px;
+    margin-right: 5px;
+}
+
+footer #tune audio {
+    background: darkgray;
+}
+
+footer #tune label {
+    background: black;
+    color: white;
+    margin-right: 10px;
+    float: right;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+
+.yellow, .magenta, .cyan, .rose, .violet, .azure, .spring, .chartreuse {
+    border: none;
+    width: 175px;
+    heigh: 350px;
+    font-size: 20pt;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#check, #cHint, #clearInput {
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+}
+
+.red {
+    background-color: red;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+}
+
+.green {
+    background-color: green;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+}
+
+.blue {
+    background-color: blue;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.magenta {
+    background-color: magenta;
+}
+
+.cyan {
+    background-color: cyan;
+}
+
+.rose {
+    background-color: #ff007f;
+}
+
+.violet {
+    background-color: violet;
+}
+
+.azure {
+    background-color: #007fff;
+}
+
+.spring {
+    background-color: springgreen;
+}
+
+.chartreuse {
+    background-color: chartreuse;
+}
