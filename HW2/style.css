@@ -1,0 +1,21 @@
+.wrapper{
+    margin: 0 auto;
+    padding:0;
+    width:960px;
+}
+.main{
+    border:1px solid darkorange;
+
+}
+h1{
+    margin:0;
+    padding:0;
+    background-color: darkorange;
+    text-align: center;
+}
+.middle{
+    padding-left: 10px;
+}
+h2{
+    text-decoration: underline;
+}

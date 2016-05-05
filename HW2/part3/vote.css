@@ -1,0 +1,102 @@
+body{
+    font-size: 15pt;
+}
+.wrapper{
+    margin-top: 0;
+    margin:0 auto;
+    width:1280px;
+    display:block;
+}
+.main{
+    padding-left: 10px;
+}
+article p{
+    color:blue;
+    font-size: 20pt;
+}
+header h1{
+    border-bottom: 1px solid red;
+}
+.dropList {
+    display: table-cell;
+    width: 1000px;
+}
+
+ul {
+    padding-left: 30px;
+}
+.candidates{
+    width: 300px;
+}
+.candidates legend{
+    padding:0;
+}
+#members {
+    border:1px solid blue;
+    width:300px;
+    font-size: 20pt;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#members li{
+    list-style: none;
+}
+
+#democrat, #republican {
+    height: 150px;
+}
+#democrat{
+    border:1px solid white;
+    background-color: blue;
+}
+#democrat li, #republican li{
+    list-style: none;
+    color:white;
+    margin-top:10px;
+    line-height: 15px;
+    font-size: 15pt;
+}
+#republican{
+    border: 1px solid white;
+    background-color: red;
+}
+
+#members li {
+    cursor: move;
+}
+
+.highlightedDemocrats {
+    background-color: blue;
+}
+
+.highlightedRepublicans {
+    background-color: red;
+}
+
+.dragged {
+    opacity: 0.5;
+}
+
+#dropLists{
+    display: table;
+}
+.parties{
+    display: table-row;
+}
+.dem{
+    border: 0;
+    background-color: blue;
+    color: white;
+}
+.rep{
+    border: 0;
+    background-color: red;
+    color: white;
+}
+legend{
+    font-size: 20pt;
+    padding-top: 35px;
+}
+#msg{
+    color:red;
+}
