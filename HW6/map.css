@@ -1,0 +1,45 @@
+.wrapper {
+    margin: 0 auto;
+    width: 960px;
+    margin-bottom: 50px;
+}
+header{
+    background-color: lightblue;
+    color:darkblue;
+    text-align: center;
+    font-weight: bold;
+}
+.control{
+    margin-top: 20px;
+    text-align: center;
+}
+.control input, .control button{
+    font-size: 15pt;
+
+}
+.view{
+    margin-top: 20px;
+}
+
+.view table {
+    width: 960px;
+    font-size: 16pt;
+    border-collapse: collapse;
+}
+
+.view table thead th{
+    border:1px solid black;
+    background-color:lightblue;
+    color:darkblue;
+}
+.view table tbody tr td{
+    border:1px solid black;
+    padding-left: 15px;
+    padding-right: 20px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    width:auto;
+    text-align:justify;
+    vertical-align: middle;
+
+}

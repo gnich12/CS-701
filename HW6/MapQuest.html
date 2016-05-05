@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="mapQuest">
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="map.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+    <script src="mapQuest.js"></script>
+    <title>HW-6 | MapQuest with Angular</title>
+</head>
+<body ng-controller="mapController" ng-init="getDirections()">
+<div class="wrapper">
+    <header><h1>Map Quest</h1></header>
+    <section>
+        <div class="control">
+            <input type="text" id="from" ng-model="from" >
+            <input type="text" id="to" ng-model="to" >
+            <button id="getDirections" ng-click="getDirections()">Get Directions</button>
+        </div>
+        <div class="view">
+            <table>
+                <thead>
+                <tr >
+                    <th colspan="4">Distance: {{dir.distance | number:2}}m - Duration: {{dir.formattedTime}}</th>
+                </tr>
+
+                </thead>
+                <tbody>
+                <tr ng-repeat="directions in dir.legs[0].maneuvers">
+                    <td>
+                        <img src='{{directions.iconUrl}}'>
+                    </td>
+                    <td>
+                        {{$index+1}}
+                    </td>
+                    <td>
+                        <a href='{{directions.mapUrl}}' target="_blank">{{directions.narrative}}</a>
+                    </td>
+                    <td>
+                        {{directions.distance | number:2}}m
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>
+
+
+</body>
+</html>
