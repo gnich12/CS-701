@@ -1,0 +1,8 @@
+#map-quest{
+    display: block;
+}
+
+#map-quest li img {
+    position: relative;
+    display: inline-block;
+}
