@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Part 3 - Stop Sign</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../style.css">
+	</head>
+	<body>
+		<h1>Stop Signs</h1>
+		<svg width="500px" height="300px" class="style-canvas">
+			
+			<defs>
+				<g id="polyOne">
+					<polygon points="10,35 35,10 85,10
+					110,35 110,85 85,110 35,110, 10,85"
+					fill="red" stroke="gray" stroke-width="4" ></polygon>
+					<text x=36 y=65
+					font-family="san-serif"
+					font-size="20px"
+					fill="white" text-align="center">
+						STOP
+					</text>
+				</g>
+			</defs>
+
+			<use xlink:href="#polyOne"
+			transform="translate(0,50)">
+
+			</use>
+
+			<use xlink:href="#polyOne"
+			transform="translate(225,50) rotate(90)"></use>
+
+			<use xlink:href="#polyOne"
+			transform="translate(335,175) rotate(180)"></use>
+			
+			<!-- Animating the spinning stop sign -->
+			<use xlink:href="#polyOne"
+			transform="translate(365,65)">
+				<animateTransform
+				attributeName="transform"
+				begin="0s" dur="1s"
+				additive="sum"
+				type="rotate"
+				from="0 60 60"
+				to="360 60 60"
+				repeatCount="indefinite"></animateTransform>
+			</use>
+			<!-- ################## -->
+			
+			<text x=10 y=45
+			font-family="san-serif"
+			font-weight="900"
+			font-size="15px"
+			fill="black">
+				First Stop Sign
+			</text>
+			<text x=115 y=45
+			font-family="san-serif"
+			font-weight="900"
+			font-size="15px"
+			fill="black">
+				Rotated 90deg
+			</text>
+			<text x=225 y=45
+			font-family="san-serif"
+			font-weight="900"
+			font-size="15px"
+			fill="black">
+				Rotated 180deg
+			</text>
+
+			<text x=395 y=45
+			font-family="san-serif"
+			font-weight="900"
+			font-size="15px"
+			fill="black">
+				Spinning
+			</text>
+		</svg>
+
+	</body>
+</html>

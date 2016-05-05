@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Testing Employee functions </title>
+	  <meta charset="utf-8">
+	</head>
+	<body>
+		<h1>Part A - Testing Employee Constructor</h1>
+		<p id="empOne"></p>
+		<p id="manager"></p>
+		
+		<h1>Part B - Testing Modular Pattern</h1>
+		<p>Using the module pattern we are able to encapsulate the loval variables
+			that are only accessable through setters and getters. For example:</p>
+		<p id='module'></p>
+		<p id='module2'></p>
+		<p id='module3'></p>
+		<script>
+			//constructor
+            function employee() {
+                this.salary = 50000;
+            };
+			//prototype function
+            employee.prototype = {
+                constructor : employee,
+                getSalary : function() {
+                    return this.salary;
+                }
+            };
+            
+            //constructor
+            function manager(){};
+            manager.prototype=new employee(); //prototype chaning to perform inheritance
+            manager.prototype.getSalary=function(){
+            	return this.salary+(this.salary*0.50); //overrididng getsalary method
+            };
+            
+            //testing employee inheritance
+            var emp1=new employee();
+            var emp2=new manager();
+            var text1 = document.getElementById("empOne");
+            var text2=document.getElementById("manager");
+            text1.innerHTML="Default employee salary is = " + emp1.getSalary();
+            text2.innerHTML="Manager salary is = " + emp2.getSalary();
+            console.log(emp1.getSalary());
+         
+            //part 2 using modular pattern
+            var employeeModule=(function(){
+            	var salary=50000;
+            	return{
+            		getSalary:function(){
+            			return salary;
+            		},
+            		setSalary:function(value){
+            			salary=value;
+            		}
+            	};
+            })();
+            var modTest=document.getElementById("module");
+            modTest.innerHTML= "Accessing employee salary variable thorugh employeeModule.salary = "+ employeeModule.salary;
+            var modTest=document.getElementById("module2");
+            modTest.innerHTML="Employee initial salary: "+employeeModule.getSalary()+" (getter)";
+            employeeModule.setSalary(76000);
+            modTest=document.getElementById("module3").innerHTML="Incrementing salary to 76000 (setter)"+"<br>"+" New salary: "+employeeModule.getSalary();
+		</script>
+	</body>
+</html>
