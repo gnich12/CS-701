@@ -9,5 +9,9 @@ them on your own local server to run i use XAMPP to run the projects.
 Also please forgive me i have to update some of them since the api keys doesnt work anymore, but feel free to take a look at them and leave 
 comments or fork it. 
 
+PLEASE DONT USE THIS CODE FOR YOUR HOMEWORK!! THIS CODE IS NOT FOR YOU TO CHEAT!!! REFERENCE IS OK BUT NOT TO CHEAT
+IF YOU ARE A CURRENT BU GRADUATE PROGRAM PLEASE DONT USE THIS CODE TO CHEAT!!! 
+
+
 contact me at alvaroch@bu.edu
 
